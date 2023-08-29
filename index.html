@@ -3,66 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      li {
-        margin: 4px;
-        padding: 0;
-        list-style: none;
-      }
-      img {
-        width: 250px;
-        height: 250px;
-      }
-    </style>
+    <title>Cat API Demo</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main role="main" class="main">
       <ul class="catContainer"></ul>
     </main>
-    <script>
-      const getCatApi = async () => {
-        const catApiUrl = "https://api.thecatapi.com/v1/images/search?limit=9";
-        try {
-          const response = await fetch(catApiUrl);
-          const catJsonData = await response.json();
-          return catJsonData;
-        } catch (error) {
-          console.error(error);
-        }
-        return null;
-      };
-
-      const displayCats = async () => {
-        const catContainer = document.querySelector(".catContainer");
-
-        try {
-          const cats = await getCatApi();
-          if (cats) {
-            const catList = cats.map((cat) => {
-              const listItem = document.createElement("li");
-              const catImage = document.createElement("img");
-              catImage.src = cat.url;
-              catImage.alt = "cat";
-              listItem.appendChild(catImage);
-              return listItem.outerHTML;
-            });
-            catContainer.innerHTML = catList.join(""); // 배열을 문자열로 결합
-          }
-        } catch (error) {
-          console.error(error);
-        }
-      };
-
-      const render = () => {
-        displayCats();
-      };
-
-      render();
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
