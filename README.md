@@ -2,6 +2,8 @@
 
 This is a simple web page that demonstrates how to use the Cat API to fetch and display cat images.
 
+![Cat Image](images/img_cat.png)
+
 ## How to Run
 
 1. git clone https://github.com/khj3437/CatAPI.git or download ZIP and unzip
