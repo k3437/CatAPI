@@ -6,7 +6,7 @@ This is a simple web page that demonstrates how to use the Cat API to fetch and 
 
 ## How to Run
 
-1. git clone [https://github.com/khj3437/CatAPI.git](https://github.com/3437k/CatAPI.git) or download ZIP and unzip
+1. git clone https://github.com/3437k/CatAPI.git or download ZIP and unzip
 
 2. open `index.html` file in a web browser.
 
