@@ -1,13 +1,24 @@
-ul {
+body {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
 }
-li {
-  margin: 4px;
-  padding: 0;
-  list-style: none;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
-img {
-  width: 250px;
-  height: 250px;
+
+.grid-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
 }
