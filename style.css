@@ -22,3 +22,9 @@ body {
   object-fit: cover;
   border-radius: 8px;
 }
+
+button {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}

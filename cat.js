@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     cats.map((cat) => {
       const img = document.createElement("img");
       img.src = cat.url;
+      img.alt = "cat";
       container.appendChild(img);
     });
   } catch (error) {
